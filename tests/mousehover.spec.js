@@ -8,7 +8,9 @@ test("mousehover", async function({page}) {
     await page.locator("//button[@class='submit-btn']").click()
     await page.waitForTimeout(2000)
     await page.locator("//span[text()='Manage']").hover()
+    await page.waitForTimeout(2000)
     await page.locator("//a[contains(@href, 'category')]").click()
+    
 
 
 
